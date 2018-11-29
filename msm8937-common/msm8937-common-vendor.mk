@@ -114,7 +114,6 @@ PRODUCT_COPY_FILES += \
     vendor/tinno/msm8937-common/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/tinno/msm8937-common/proprietary/vendor/bin/tftp_server:system/vendor/bin/tftp_server \
     vendor/tinno/msm8937-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
-    vendor/tinno/msm8937-common/proprietary/vendor/etc/thermal-engine.conf:system/vendor/etc/thermal-engine.conf \
     vendor/tinno/msm8937-common/proprietary/vendor/bin/time_daemon:system/vendor/bin/time_daemon \
     vendor/tinno/msm8937-common/proprietary/vendor/bin/wcnss_filter:system/vendor/bin/wcnss_filter \
     vendor/tinno/msm8937-common/proprietary/vendor/bin/wcnss_service:system/vendor/bin/wcnss_service \
@@ -159,6 +158,7 @@ PRODUCT_COPY_FILES += \
     vendor/tinno/msm8937-common/proprietary/vendor/etc/perf/perf-profile0.conf:system/vendor/etc/perf/perf-profile0.conf \
     vendor/tinno/msm8937-common/proprietary/vendor/etc/perf/perf-profile1.conf:system/vendor/etc/perf/perf-profile1.conf \
     vendor/tinno/msm8937-common/proprietary/vendor/etc/perf/perfboostsconfig.xml:system/vendor/etc/perf/perfboostsconfig.xml \
+    vendor/tinno/msm8937-common/proprietary/vendor/etc/thermal-engine.conf:system/vendor/etc/thermal-engine.conf \
     vendor/tinno/msm8937-common/proprietary/vendor/etc/xtra_root_cert.pem:system/vendor/etc/xtra_root_cert.pem \
     vendor/tinno/msm8937-common/proprietary/vendor/firmware/a530_gpmu.fw2:system/vendor/firmware/a530_gpmu.fw2 \
     vendor/tinno/msm8937-common/proprietary/vendor/firmware/a530_pfp.fw:system/vendor/firmware/a530_pfp.fw \
@@ -175,7 +175,6 @@ PRODUCT_COPY_FILES += \
     vendor/tinno/msm8937-common/proprietary/vendor/firmware/cpp_firmware_v1_2_0.fw:system/vendor/firmware/cpp_firmware_v1_2_0.fw \
     vendor/tinno/msm8937-common/proprietary/vendor/firmware/cpp_firmware_v1_4_0.fw:system/vendor/firmware/cpp_firmware_v1_4_0.fw \
     vendor/tinno/msm8937-common/proprietary/vendor/firmware/cpp_firmware_v1_5_0.fw:system/vendor/firmware/cpp_firmware_v1_5_0.fw \
-    vendor/tinno/msm8937-common/proprietary/vendor/firmware/cpp_firmware_v1_5_1.fw:system/vendor/firmware/cpp_firmware_v1_5_1.fw \
     vendor/tinno/msm8937-common/proprietary/vendor/firmware/cpp_firmware_v1_5_2.fw:system/vendor/firmware/cpp_firmware_v1_5_2.fw \
     vendor/tinno/msm8937-common/proprietary/vendor/firmware/cpp_firmware_v1_6_0.fw:system/vendor/firmware/cpp_firmware_v1_6_0.fw \
     vendor/tinno/msm8937-common/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:system/vendor/firmware/cpp_firmware_v1_8_0.fw \
@@ -575,8 +574,8 @@ PRODUCT_COPY_FILES += \
     vendor/tinno/msm8937-common/proprietary/vendor/lib64/libsettings.so:system/vendor/lib64/libsettings.so \
     vendor/tinno/msm8937-common/proprietary/vendor/lib64/libslimclient.so:system/vendor/lib64/libslimclient.so \
     vendor/tinno/msm8937-common/proprietary/vendor/lib64/libsmemlog.so:system/vendor/lib64/libsmemlog.so \
-    vendor/tinno/msm8937-common/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
     vendor/tinno/msm8937-common/proprietary/vendor/lib64/libspl.so:system/vendor/lib64/libspl.so \
+    vendor/tinno/msm8937-common/proprietary/vendor/lib64/libssd.so:system/vendor/lib64/libssd.so \
     vendor/tinno/msm8937-common/proprietary/vendor/lib64/libsystem_health_mon.so:system/vendor/lib64/libsystem_health_mon.so \
     vendor/tinno/msm8937-common/proprietary/vendor/lib64/libthermalioctl.so:system/vendor/lib64/libthermalioctl.so \
     vendor/tinno/msm8937-common/proprietary/vendor/lib64/libtinyxml2_1.so:system/vendor/lib64/libtinyxml2_1.so \
@@ -641,4 +640,6 @@ PRODUCT_PACKAGES += \
     qcnvitems \
     qcrilhook \
     qti-telephony-common \
-    tcmclient
+    tcmclient \
+    vendor.qti.hardware.alarm-V1.0-java \
+    vendor.qti.hardware.sensorscalibrate-V1.0-java
