@@ -114,6 +114,7 @@ PRODUCT_COPY_FILES += \
     vendor/tinno/msm8937-common/proprietary/vendor/bin/slim_daemon:system/vendor/bin/slim_daemon \
     vendor/tinno/msm8937-common/proprietary/vendor/bin/tftp_server:system/vendor/bin/tftp_server \
     vendor/tinno/msm8937-common/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
+    vendor/tinno/msm8937-common/proprietary/vendor/etc/thermal-engine.conf:system/vendor/etc/thermal-engine.conf \
     vendor/tinno/msm8937-common/proprietary/vendor/bin/time_daemon:system/vendor/bin/time_daemon \
     vendor/tinno/msm8937-common/proprietary/vendor/bin/wcnss_filter:system/vendor/bin/wcnss_filter \
     vendor/tinno/msm8937-common/proprietary/vendor/bin/wcnss_service:system/vendor/bin/wcnss_service \
